@@ -7,7 +7,7 @@
 
 
 
-
+<!--Como aun no hay na base de datos, cuando abran el index.php les dara error, de HOST DECONOCIDO, por eso mismo-->
 
 
 
