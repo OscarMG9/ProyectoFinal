@@ -1,27 +1,6 @@
 <?php include("../php/db.php")?>
 <?php include("../php/header.php")?>
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Inicio</a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Artista</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Album</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
       <div class=" w-100 my-md-3 pl-md-3">
             <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <h1 class="display-5">Registrar un nuevo album</h1>
@@ -34,13 +13,31 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group col-4">
-                                        <label for="artistLabel" class="text-center">Artista</label>
-                                        <select name="artist" id="ArtistA" class="form-control">
-                                            <option value="" selected>Selecciona un Artista</option>
-                                            <option value="">...</option>
+                           <!--Div para select/option Docente--> 
+                            <h6>Artista</h6> 
+                                <div class="form-control text-center">
+                                        <label for="">
+                                        <select name="artista" id="artista" class="">
+
+                                        <?php
+                                        
+                                        $query = "SELECT idartista, nombre, paterno, materno FROM artista";
+
+                                        $ejecutar= mysqli_query($conn, $query)
+                                        ?>
+
+
+                                        <?php foreach ($ejecutar as $opciones): ?>
+
+                                            <option value="<?php echo $opciones['idartista']?>"><?php echo $opciones['nombre']?> <?php echo $opciones['paterno']?> <?php echo $opciones['materno']?></option>
+                                        
+                                        <?php endforeach  ?>
+
                                         </select>
-                                    </div>
+                                        </label>               
+
+                                </div>
+                                    <!--Termina select Option-->
                                     <div class="form-group col-4">
                                         <label for="titleMusic" class="text-center">Título música</label>
                                         <input type="text" name="titleMusic" id="TM" class="form-control" placeholder="Título música">
