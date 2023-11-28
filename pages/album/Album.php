@@ -51,11 +51,11 @@
                                     </div>
                                     <div class="form-group col-4">
                                         <label for="L_spotify" class="text-center">Link Spotify</label>
-                                        <input type="text" class="form-control" name="links" id="LS" placeholder="Link Spotify">
+                                        <input type="url" class="form-control" name="links" id="LS" placeholder="Link Spotify">
                                     </div>
                                     <div class="form-group col-4">
                                         <label for="L_apple" class="text-center">Apple Music</label>
-                                        <input type="text" class="form-control" name="linka" id="LA" placeholder="Apple Music">
+                                        <input type="url" class="form-control" name="linka" id="LA" placeholder="Apple Music">
                                     </div>
                                 </div>
                                 <div class="form-row">
