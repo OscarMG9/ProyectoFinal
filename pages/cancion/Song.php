@@ -2,7 +2,7 @@
 <?php include("../../php/header.php")?>
 <html lang="en">
 
-    <h1 class="text-center text-dark mt-3">Resgitrar Canción</h1>
+    <h1 class="text-center text-light mt-3">Registrar Canción</h1>
     <div class="container text-center my-5">
         <div class="row">
             <div class="col-12" style="background: rgb(101, 154, 79);">
@@ -11,9 +11,9 @@
                         <img src="../img/no-images.png" alt="" width="75%">
                     </div>
                     <div class="col-8">
-                        <form action="" method="get" class="form-group">
+                        <form action="" method="get" class="form-group text-left mt-3">
                             <label for="NameSong" class="text-white">Canción:</label>
-                            <input type="text" id="SongName" name="NameSong" class="form-control">
+                            <input type="text" id="SongName" name="NameSong" class="form-control" placeholder="Nombre de la canción">
                             <label for="NameArtist" class="text-white">Artista:</label>
                             <select name="artist" id="ArtistA" class="form-control">
                                 <option value="" selected>Selecciona un Artista</option>

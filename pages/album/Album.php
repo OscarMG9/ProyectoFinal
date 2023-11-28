@@ -2,7 +2,7 @@
 <?php include("../../php/header.php")?>
 
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 container">
     <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <h1 class="display-5">Registrar un nuevo album</h1>
                 <form action="insertAlbum.php" method="POST" style="margin-top:5%;margin-bottom:5%">

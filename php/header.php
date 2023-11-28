@@ -6,6 +6,14 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Proyecto</title>
+    <style>
+      body{
+        background: #159957;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+    </style>
     <!--AQUI PONDRAN TODA LA CABEZZERA, COMO LINK DE CSS O BOOSTSRAP, ICONONO-->
 </head>
 <!--HEADER-->
