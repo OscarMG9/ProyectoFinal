@@ -1,24 +1,9 @@
-<<<<<<< HEAD:pages/Album.php
-<?php include("../php/db.php")?>
-<?php include("../php/header.php")?>
+<?php include("../../php/db.php")?>
+<?php include("../../php/header.php")?>
 
-      <div class=" w-100 my-md-3 pl-md-3">
-=======
-<!-- <?php include("../php/db.php")?>
-<?php include("../php/header.php")?> -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../img/add-6491203_1280.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>AddAlbum</title>
-</head>
-    <body>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
->>>>>>> ecabb5784a7214afaac0e1c5f4cfe5e5c8136c8f:pages/Album.html
-            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <h1 class="display-5">Registrar un nuevo album</h1>
                 <form action="" style="margin-top:5%;margin-bottom:5%">
                         <div class="form-row">
@@ -29,31 +14,24 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
+
                            <!--Div para select/option Docente--> 
                             <h6>Artista</h6> 
                                 <div class="form-control text-center">
                                         <label for="">
                                         <select name="artista" id="artista" class="">
-
-                                        <?php
-                                        
+                                        <?php                                    
                                         $query = "SELECT idartista, nombre, paterno, materno FROM artista";
-
                                         $ejecutar= mysqli_query($conn, $query)
                                         ?>
-
-
                                         <?php foreach ($ejecutar as $opciones): ?>
-
                                             <option value="<?php echo $opciones['idartista']?>"><?php echo $opciones['nombre']?> <?php echo $opciones['paterno']?> <?php echo $opciones['materno']?></option>
-                                        
                                         <?php endforeach  ?>
-
                                         </select>
                                         </label>               
-
                                 </div>
-                                    <!--Termina select Option-->
+                                <!--Termina select Option-->
+                                
                                     <div class="form-group col-4">
                                         <label for="titleMusic" class="text-center">Título música</label>
                                         <input type="text" name="titleMusic" id="TM" class="form-control" placeholder="Título música">
@@ -94,18 +72,5 @@
                 </form>
             </div>
       </div>
-</body>
-</html>
-<script src="./js/Pa'_lo_q_gusten.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/vendor/holder.min.js"></script>
-<script>
-    Holder.addTheme('thumb', {
-      bg: '#55595c',
-      fg: '#eceeef',
-      text: 'Thumbnail'
-    });
-  </script>
+
+      <?php include("../../php/footer.php");?>

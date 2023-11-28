@@ -15,13 +15,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Inicio</a>
+          <a class="navbar-brand" href="../../php/index.php">Inicio</a>
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Artista</span></a>
+              <a class="nav-link" href="../../pages/artista/artista.php">Artista</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Album</a>
+              <a class="nav-link" href="../../pages/album/album.php">Album</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../../pages/cancion/song.php">Canciones</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -31,4 +34,4 @@
         </div>
       </nav>
 </header>
-<body>
+<body class="text-dark">

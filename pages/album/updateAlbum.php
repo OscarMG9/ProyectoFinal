@@ -1,17 +1,8 @@
-<!-- <?php include("../php/header.php")?> -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../img/refresh-525698_1280.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UpdateAlbum</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+<?php include("../../php/header.php")?>
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="bg-secondary text-white mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden rounded">
-            <h1 class="display-5">Album: </h1>
+            <h1 class="display-5">Actualizar Album: </h1>
+
             <form action="" style="margin-top:5%;margin-bottom:5%" method="put">
                     <div class="form-row">
                         <div class="form-group col-12">
@@ -68,5 +59,5 @@
             </form>
         </div>
   </div>
-</body>
-</html>
+
+  <?php include("../../php/footer.php")?>
