@@ -5,16 +5,15 @@
 
 if (isset($_POST['submit']))
 {
-
+    $id = $_POST['artista'];
     $nombre = $_POST['titulo'];
-    $links = $_POST['links'];
+    $img = $_POST['img'];
+    $links = $_POST=['links'];
     $linka = $_POST=['linka'];
     $desc = $_POST=['descripcion'];
-    $img = $_POST['img'];
-    $idartista = $_POST['idartista'];
 
     $query = "INSERT INTO album(nombrealbum, links, linka, descripcion, img, idartista)
-            VALUES ('$nombre', '$links', '$linka', '$desc', '$img', '$idartista')";
+            VALUES ('$nombre', '$links', '$linka', '$desc', '$img', '$id')";
 
     $result = mysqli_query($conn, $query);
 

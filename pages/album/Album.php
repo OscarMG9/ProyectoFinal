@@ -19,7 +19,7 @@
                             <h6>Artista</h6> 
                                 <div class="form-control text-center">
                                         <label for="">
-                                        <select name="artista" id="artista" class="">
+                                        <select type="number" name="artista" id="artista" >
                                         <?php                                    
                                         $query = "SELECT idartista, nombre, paterno, materno FROM artista";
                                         $ejecutar= mysqli_query($conn, $query)
@@ -34,11 +34,11 @@
                                 
                                     <div class="form-group col-4">
                                         <label for="titleMusic" class="text-center">Título música</label>
-                                        <input type="text" name="nombre" id="TM" class="form-control" placeholder="Título música">
+                                        <input type="text" name="titulo" id="TM" class="form-control" placeholder="Título música">
                                     </div>
                                     <div class="form-group col-4">
                                         <label for="NameALabel" class="text-center">Nombre album</label>
-                                        <input type="text" name="Nombrealbu," id="NM" class="form-control" placeholder="Nombre album">
+                                        <input type="text" name="nombre" id="NM" class="form-control" placeholder="Nombre album">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -61,7 +61,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="Descripcion" class="text-center">Descripción del album</label>
-                                        <textarea class="form-control" name="Desc" id="D" placeholder="Descripción del album..."></textarea>
+                                        <textarea class="form-control" name="descripcion" id="D" placeholder="Descripción del album..."></textarea>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-outline-primary" name="submit">Guardar</button>
