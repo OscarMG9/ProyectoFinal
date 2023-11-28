@@ -13,7 +13,7 @@
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
             <div class="row">
-                <div class="col-12">
+                <div class="co1l-12">
 
                     <div class="row mt-5">
                         <div class="col-6 bg-secondary border border-white rounded" style="right: 5px;">
