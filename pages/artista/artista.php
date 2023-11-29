@@ -3,8 +3,8 @@
 
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="bg-success-subtle text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden rounded border border-success">
-            <h1 class="display-5"><strong>Registar nuevo Artista:</strong> </h1>
+        <div class="bg-success-subtle bg-dark text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden rounded border border-success mt-3">
+            <h1 class="display-5 text-light"><strong>Registar nuevo Artista:</strong> </h1>
             <form action="" style="margin-top:5%;margin-bottom:5%" method="put">
                     <div class="form-row">
                         <div class="form-group col-12">
@@ -33,7 +33,7 @@
                                     <label for="ImgA">Foto</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" name="NamePhoto" id="Photo" required="">
-                                        <label class="custom-file-label" for="selectedFile">Selecciona Foto</label>
+                                        <label class="custom-file-label text-left" for="selectedFile">Seleccionar Foto</label>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-8">
