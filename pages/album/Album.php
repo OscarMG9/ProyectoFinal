@@ -14,12 +14,38 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-
+                                        <div class="form-group col-12">
+                                            <label for="NameALabel" class="text-center">Nombre album</label>
+                                            <input type="text" name="titulo" id="NM" class="form-control" placeholder="Nombre album">
+                                        </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="L_spotify" class="text-center">Link Spotify</label>
+                                        <input type="text" class="form-control" name="links" id="LS" placeholder="Link Spotify">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="L_apple" class="text-center">Apple Music</label>
+                                        <input type="text" class="form-control" name="linka" id="LA" placeholder="Apple Music">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-4">
+                                        <label for="Descripcion" class="text-center">Descripción del album</label>
+                                        <input type="text" name="desc" placeholder="desc">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="ImgA">Imagén del album</label>
+                                        <div class="custom-file">
+                                            <input type="text" class="" name="img" id="File" required="">
+                                            <label class="" for="selectedFile">Selecciona archivo</label>
+                                        </div>
+                                    </div>
+                                    
                            <!--Div para select/option Docente--> 
-                            <h6>Artista</h6> 
-                                <div class="form-control text-center">
-                                        <label for="">
-                                        <select type="number" name="artista" id="artista" >
+                                    <div class="p-4 text-center col-4">
+                                        <label for="">Artista:
+                                        <select type="number" name="idartista" id="artista" >
                                         <?php                                    
                                         $query = "SELECT idartista, nombre, paterno, materno FROM artista";
                                         $ejecutar= mysqli_query($conn, $query)
@@ -29,42 +55,10 @@
                                         <?php endforeach  ?>
                                         </select>
                                         </label>               
-                                </div>
+                                    </div>
                                 <!--Termina select Option-->
-                                
-                                    <div class="form-group col-4">
-                                        <label for="titleMusic" class="text-center">Título música</label>
-                                        <input type="text" name="titulo" id="TM" class="form-control" placeholder="Título música">
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <label for="NameALabel" class="text-center">Nombre album</label>
-                                        <input type="text" name="nombre" id="NM" class="form-control" placeholder="Nombre album">
-                                    </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-4">
-                                        <label for="ImgA">Imagén del album</label>
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" name="img" id="File" required="">
-                                            <label class="custom-file-label" for="selectedFile">Selecciona archivo</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <label for="L_spotify" class="text-center">Link Spotify</label>
-                                        <input type="url" class="form-control" name="links" id="LS" placeholder="Link Spotify">
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <label for="L_apple" class="text-center">Apple Music</label>
-                                        <input type="url" class="form-control" name="linka" id="LA" placeholder="Apple Music">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="Descripcion" class="text-center">Descripción del album</label>
-                                        <textarea class="form-control" name="descripcion" id="D" placeholder="Descripción del album..."></textarea>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-outline-primary" name="submit">Guardar</button>
+                                <input type="submit" name="submit" class="btn btn-success" value="Guardar">
                                 <button type="reset" class="btn btn-outline-light">Limpiar</button>
                             </div>
                         </div>
